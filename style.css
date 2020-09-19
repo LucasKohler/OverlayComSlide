@@ -45,12 +45,15 @@ body {
 	border-radius: 10px;
 	display: absolute;
 	margin-top: 3vh;
+	transition: 0.3s;
+	opacity: 0.95;
 }
 
 .buttonCenter div button:hover {
 	background-color: var(--secundary-bg-color);
 	border-color: var(--primary-color);
 	color: var(--primary-color);
+	opacity: 1;
 }
 
 .buttonCenter div button:active {
