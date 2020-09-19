@@ -8,7 +8,7 @@
 			crossorigin="anonymous"
 		></script>
 		<title>Wikipédia</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<noscript>
@@ -18,7 +18,7 @@
 			<p>Clique na mensagem e</p>
 			<p>receba uma mensagem de boas vindas.</p>
 			<div>
-				<button id="hello" onclick="on()">Dizer olá</button>
+				<button id="hello">Dizer olá</button>
 			</div>
 		</div>
 
@@ -29,16 +29,5 @@
 			</div>
 		</div>
 	</body>
-	<script>
-		function on() {
-			document.getElementById('overlay').style.display = 'block';
-			setTimeout((e) => {
-				document.getElementById('overlay').classList.add('open');
-				setTimeout((e) => {
-					document.getElementById('overlay').style.display = 'none';
-					document.getElementById('overlay').classList.remove('open');
-				}, 500);
-			}, 2000);
-		}
-	</script>
+	<script src="./script.js"></script>
 </html>
